@@ -25,6 +25,20 @@ Download earlier versions of Marlin on the [Releases page](https://github.com/Ma
 
 Before you can build Marlin for your machine you'll need a configuration for your specific hardware. Upon request, your vendor will be happy to provide you with the complete source code and configurations for your machine, but you'll need to get updated configuration files if you want to install a newer version of Marlin. Fortunately, Marlin users have contributed dozens of tested configurations to get you started. Visit the [MarlinFirmware/Configurations](https://github.com/MarlinFirmware/Configurations) repository to find the right configuration for your hardware.
 
+### Building configurations
+
+Marlin Firmware is configured using two files:
+
+- `Configuration.h` contains core configuration options like machine geometry.
+- `Configuration_adv.h` contains optional settings for advanced and low level features.
+
+For Graphical LCD these files may also be included:
+
+- `_Bootscreen.h` provides the bitmap for a custom Boot Screen.
+- `_Statusscreen.h` provides bitmaps to customize the Status Screen.
+
+See the [Configuration page](https://marlinfw.org/docs/configuration/configuration.html) for more information about configuration and individual configuration options.
+
 ## Building Marlin 2.1
 
 To build and upload Marlin you will use one of these tools:
